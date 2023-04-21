@@ -1,0 +1,134 @@
+<!-- header section starts  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<header>
+    <!-- header-1 start -->
+    <div class="header-1">
+        <a href="" class="logo"> <i class="fas fa-shopping-basket"></i>SPT</a>
+        <form action="" class="search-box-container">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <!-- <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-user-circle"></a>
+        </div> -->
+    </div>
+    <!-- header-1 end -->
+    <!-- menu start -->
+    <div id="sticy" class="header-2">
+        <div class="menu_icon" (click)="menuShow()">
+            <div id="menu-bar" class="fas fa-bars"></div> 
+        </div>
+
+        <nav class="navbar" [class.navbarClass]="navbarVariable">
+            <!-- <a routerLink="/home">home</a>
+            <a routerLink="/shop">shop</a>
+            <a routerLink="/about">about</a>
+            <a routerLink="/review">review</a>
+            <a routerLink="/blog">blog</a>
+            <a routerLink="/contact">contact</a> -->
+            <a href="" routerLink="/home"> <i class="fas fa-home"></i> home</a>
+            <a href="" routerLink="/shop"> <i class="fas fa-shopping-bag"></i> shop</a>
+            <a href="" routerLink="/about"><i class="fas fa-user"></i> about</a>
+            <a href="" routerLink="/review"><i class="fas fa-star"></i> review</a>
+            <a href="" routerLink="/blog"><i class="fas fa-book"></i> blog</a>
+            <a href="" routerLink="/contact"><i class="fas fa-phone"></i> contact</a>
+            <a href="" routerLink="/order"><i class="fas fa-shopping-basket"></i> order</a>
+        </nav>
+        <div class="icons">
+            <a class="fas fa-shopping-cart" (click)="cartShow()"></a>
+            <a class="fas fa-heart" (click)="lickShow()"></a>
+            <a class="fas fa-user-circle" (click)="loginShow()"></a>
+        </div>
+        <!-- <form action="" class="search-box-container">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form> -->
+
+        <!-- menu end -->
+        <!-- shoping cart start -->
+        <div class="shopping-cart" [class.cartClass]="cartVariable">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="/assets/images/cart-1.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="/assets/images/cart-2.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="/assets/images/cart-3.jpg" alt="">
+                <div class="content">
+                    <h3>organic food</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <h3 class="total"> total : <span>56.97</span> </h3>
+            <a href="#" class="btn">checkout cart</a>
+        </div>
+        <!-- shoping cart end -->
+        <!-- lick cart start -->
+        <div class="lick-cart" [class.lickClass]="lickVariable">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="/assets/images/avocado.png" alt="">
+                <div class="content">
+                    <h3>avocado</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="/assets/images/cab.png" alt="">
+                <div class="content">
+                    <h3>cabege</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="/assets/images/orange.png" alt="">
+                <div class="content">
+                    <h3>orange</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <h3 class="total"> total : <span>56.97</span> </h3>
+            <a href="#" class="btn">checkout cart</a>
+        </div>
+        <!-- shoping cart end -->
+        <!-- log in form start -->
+        <form action="" class="login-form" [class.loginClass]="loginVariable">
+            <h3>login now</h3>
+            <input type="email" placeholder="  your email" class="box">
+            <input type="password" placeholder="  your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+        <!-- log in form end -->
+        
+    </div>
+</header>

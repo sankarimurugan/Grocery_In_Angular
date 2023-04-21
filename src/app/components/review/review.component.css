@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --orenge: #ff3c00;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, 0.1);
+    --outline: .1rem solid rgba(0, 0, 0, 0.1);
+    --outline-hover: .2rem var(--black);
+}
+ 
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s fx;
+}
+
+*::selection {
+    background: var(--orenge);
+    color: #f3f3f3;
+}
+
+.info-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    padding: 5rem 6%;
+  }
+  
+  .info-container .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+  
+  .info-container .info img {
+    height: 7rem;
+  }
+  
+  .info-container .info .content h3 {
+    font-size: 2rem;
+    color: #130f40;
+    padding-bottom: .5rem;
+  }
+  
+  .info-container .info .content span {
+    font-size: 1.5rem;
+    color: #666;
+  }
+
+
+  .review {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    padding: 5rem 6%;
+  }
+  
+  .review .box {
+    padding: 2rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .review .box .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .review .box .user img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+  }
+  
+  .review .box .user h3 {
+    font-size: 2.2rem;
+    color: #130f40;
+  }
+  
+  .review .box .user span {
+    font-size: 1.4rem;
+    color: #ff3c00;
+  }
+  
+  .review .box p {
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 2;
+  }
+
+  .heading {
+    background: url(/assets/images/heading-bg.jpg) no-repeat;
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 18rem;
+    padding-bottom: 15rem;
+}
+
+.heading h1 {
+    color: #130f40;
+    font-size: 4rem;
+}
+
+.heading p {
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #666;
+}
+
+.heading p a {
+    color: #130f40;
+    padding-right: .5rem;
+}
+
+.heading p a:hover {
+    color: #ff3c00;
+}
+
+.title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    padding: 1.2rem 0;
+    /* padding:5rem 6%; */
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+    color: #130f40;
+    /* padding: 5rem 6%; */
+}
+
+.title span {
+    color: #ff3c00;
+    padding-left: .7rem;
+}
+
+.title a {
+    margin-left: auto;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.title a:hover {
+    color: #ff3c00;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    background: #ff3c00;
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #130f40;
+}
