@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --orenge: #ff3c00;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0.3rem 1.5rem rgba(0, 0, 0, 0.1);
+    --border: .2rem solid rgba(0, 0, 0, 0.1);
+    --outline: .1rem solid rgba(0, 0, 0, 0.1);
+    --outline-hover: .2rem var(--black);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s fx;
+}
+
+*::selection {
+    background: var(--orenge);
+    color: #f3f3f3;
+}
+body{
+    background: #fcfafa;
+
+}
+
+html {
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+    /* background: #eee; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

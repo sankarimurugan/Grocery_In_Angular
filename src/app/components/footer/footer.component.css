@@ -1,0 +1,149 @@
+section {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background: #eee;
+}
+
+.footer {
+    background: #eee;
+    margin-top: 5rem;
+}
+
+.footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #130f40;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+    padding-bottom: .5rem;
+}
+
+.footer .box-container .box a {
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+    display: block;
+}
+
+.footer .box-container .box a:hover {
+    color: #ff3c00;
+}
+
+.footer .box-container .box a:hover {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: #ff3c00;
+}
+
+.footer .box-container #news {
+    line-height: 1.8;
+}
+
+/* footer section end */
+
+/* button style start */
+.btn {
+    width: 20rem;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    background: var(--orenge);
+    text-align: center;
+}
+
+.btn:hover {
+    background: var(--black);
+    color: #fff;
+}
+
+/* button style end */
+
+
+.footer .box-container .box .payment {
+    padding-top: 2rem;
+    width: 100%;
+    /* margin-top: 2rem; */
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    color: var(--black);
+    border-top: var(--border);
+    font-size: 2rem;
+}
+
+.footer .credit span {
+    color: var(--orenge);
+    font-weight: 500;
+}
+
+.footer .box-container .box .email {
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    height: 4rem;
+}
+
+
+
+
+
+
+
+
+@media(max-width:768px) {
+    .footer .box-container {
+        text-align: center;
+    }
+
+    section {
+        padding: 1rem 2rem;
+    }
+
+    .footer .box-container #news {
+        text-align: center;
+    }
+}
+
+@media (max-width:450px) {
+    .footer .box-container {
+        text-align: center;
+    }
+
+    section {
+        padding: 1rem 2rem;
+    }
+
+    .footer .box-container #news {
+        text-align: center;
+    }
+}
